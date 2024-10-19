@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <h1>Temperature convertor</h1>
+    <div class="container">
+        <div id="box1" class="box">
+
+<h1>Enter temperature</h1>
+<div class="text">
+    <p>Degree</p>
+   <span>
+    <input type="number" id="degree" placeholder="Enter temperature"    >
+    <select id="fromUnit">
+        <option value="Celcius">C</option>
+        <option value="Fahrenheit">F</option>
+        <option value="Kelvin">K</option>
+    </select>
+   </span>
+
+    <p>Convert in</p>
+    <select id="toUnit">
+        <option value="Celcius">Celcius</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+        <option value="Kelvin">Kelvin</option>
+    </select>
+</div>
+
+<button id="convert-btn">Convert<i class="bi bi-arrow-right-short"></i></button>
+        </div>
+        <div id="result" class="box">
+            <h1 id="resultValue"></h1>
+        </div>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
